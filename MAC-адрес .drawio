@@ -1,0 +1,127 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="pAXZWbL-NnctmIyA6nvs">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eT65KH8VSq6h1DW5phmc-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" value="Структура MAC-адреса (48 бит / 6 байт)&#xa;Пример: 00 : 1A : 2B : 3C : 4D : 5E" vertex="1">
+          <mxGeometry height="40" width="460" x="460" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;fontSize=12;" value="OUI&#xa;(Organizationally Unique Identifier)&#xa;Идентификатор производителя&#xa;Первые 3 байта (24 бита)" vertex="1">
+          <mxGeometry height="80" width="270" x="410" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;fontSize=12;" value="NIC Specific&#xa;(Network Interface Controller)&#xa;Уникальный номер устройства&#xa;Последние 3 байта (24 бита)" vertex="1">
+          <mxGeometry height="80" width="270" x="680" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=14" value="00 : 1A : 2B" vertex="1">
+          <mxGeometry height="40" width="170" x="460" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=14" value="3C : 4D : 5E" vertex="1">
+          <mxGeometry height="40" width="170" x="730" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-6" edge="1" parent="1" source="eT65KH8VSq6h1DW5phmc-2" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="eT65KH8VSq6h1DW5phmc-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-7" edge="1" parent="1" source="eT65KH8VSq6h1DW5phmc-3" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="eT65KH8VSq6h1DW5phmc-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-8" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" value="Схема подключения хостов к коммутатору L2" vertex="1">
+          <mxGeometry height="30" width="360" x="510" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=15;fontSize=12;" value="Центральный коммутатор&#xa;(Switch L2)&#xa;&#xa;Таблица MAC-адресов:&#xa;Порт 1 -&amp;gt; 00:1A:2B:3C:4D:01&#xa;Порт 2 -&amp;gt; 00:1A:2B:3C:4D:02&#xa;Порт 3 -&amp;gt; 00:1A:2B:3C:4D:03" vertex="1">
+          <mxGeometry height="120" width="240" x="570" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eee1f7;strokeColor=#9673a6;fontSize=11;" value="Компьютер 1 (PC A)&#xa;IP: 192.168.1.10&#xa;MAC: 00:1A:2B:3C:4D:01" vertex="1">
+          <mxGeometry height="60" width="160" x="370" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eee1f7;strokeColor=#9673a6;fontSize=11;" value="Компьютер 2 (PC B)&#xa;IP: 192.168.1.20&#xa;MAC: 00:1A:2B:3C:4D:02" vertex="1">
+          <mxGeometry height="60" width="160" x="610" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eee1f7;strokeColor=#9673a6;fontSize=11;" value="Компьютер 3 (PC C)&#xa;IP: 192.168.1.30&#xa;MAC: 00:1A:2B:3C:4D:03" vertex="1">
+          <mxGeometry height="60" width="160" x="850" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-13" edge="1" parent="1" source="eT65KH8VSq6h1DW5phmc-10" style="endArrow=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;endFill=0;" target="eT65KH8VSq6h1DW5phmc-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-14" connectable="0" parent="eT65KH8VSq6h1DW5phmc-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="Порт 1" vertex="1">
+          <mxGeometry relative="1" x="0.75" as="geometry">
+            <mxPoint x="-20" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-15" edge="1" parent="1" source="eT65KH8VSq6h1DW5phmc-11" style="endArrow=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=0;" target="eT65KH8VSq6h1DW5phmc-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-16" connectable="0" parent="eT65KH8VSq6h1DW5phmc-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="Порт 2" vertex="1">
+          <mxGeometry relative="1" x="0.6" as="geometry">
+            <mxPoint x="20" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-17" edge="1" parent="1" source="eT65KH8VSq6h1DW5phmc-12" style="endArrow=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;endFill=0;" target="eT65KH8VSq6h1DW5phmc-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="eT65KH8VSq6h1DW5phmc-18" connectable="0" parent="eT65KH8VSq6h1DW5phmc-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="Порт 3" vertex="1">
+          <mxGeometry relative="1" x="0.75" as="geometry">
+            <mxPoint x="20" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" value="Разбор сетевой ошибки: Переполнение таблицы MAC-адресов" vertex="1">
+          <mxGeometry height="30" width="500" x="440" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;fontStyle=1;align=center;fontSize=12;" value="ПРОБЛЕМА&#xa;&#xa;Флуд неизвестного одноадресного&#xa;трафика (Unicast Flooding)&#xa;внутри коммутатора L2" vertex="1">
+          <mxGeometry height="80" width="240" x="570" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=13" value="ПРИЧИНЫ ВОЗНИКНОВЕНИЯ" vertex="1">
+          <mxGeometry height="20" width="220" x="340" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" value="Атака MAC-overflow&#xa;(Злоумышленник забивает&#xa;память генерацией тысяч&#xa;ложных MAC-адресов)" vertex="1">
+          <mxGeometry height="70" width="210" x="340" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" value="Короткий таймаут очистки&#xa;(Параметр Aging Time слишком&#xa;мал, записи стираются раньше,&#xa;чем хосты успевают ответить)" vertex="1">
+          <mxGeometry height="70" width="210" x="340" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-6" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=13" value="ПОСЛЕДСТВИЯ ДЛЯ СЕТИ" vertex="1">
+          <mxGeometry height="20" width="220" x="820" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;fontSize=11;" value="Падение безопасности&#xa;(Любой ПК через WireShark&#xa;может перехватить чужие&#xa;конфиденциальные данные)" vertex="1">
+          <mxGeometry height="70" width="210" x="830" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;fontSize=11;" value="Деградация скорости&#xa;(Коммутатор работает как Hub&#xa;и дублирует трафик на все&#xa;порты, забивая канал)" vertex="1">
+          <mxGeometry height="70" width="210" x="830" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-9" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=13" value="МЕТОДЫ ИСПРАВЛЕНИЯ И ЗАЩИТЫ" vertex="1">
+          <mxGeometry height="20" width="300" x="540" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;align=center;" value="Port Security&#xa;&#xa;Ограничение лимита&#xa;MAC-адресов на одном&#xa;физическом порту" vertex="1">
+          <mxGeometry height="80" width="150" x="430" y="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;align=center;" value="Static Binding&#xa;&#xa;Ручная жесткая привязка&#xa;MAC-адресов серверов&#xa;к номерам портов" vertex="1">
+          <mxGeometry height="80" width="150" x="615" y="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;align=center;" value="Сегментация VLAN&#xa;&#xa;Изоляция бродкастового&#xa;и неизвестного трафика&#xa;внутри логических подсетей" vertex="1">
+          <mxGeometry height="80" width="150" x="800" y="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-13" edge="1" parent="1" source="5-1zp4KCR5sD29i6IIJs-2" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="5-1zp4KCR5sD29i6IIJs-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-14" edge="1" parent="1" source="5-1zp4KCR5sD29i6IIJs-2" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="5-1zp4KCR5sD29i6IIJs-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-15" edge="1" parent="1" source="5-1zp4KCR5sD29i6IIJs-2" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="5-1zp4KCR5sD29i6IIJs-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-16" edge="1" parent="1" source="5-1zp4KCR5sD29i6IIJs-2" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="5-1zp4KCR5sD29i6IIJs-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-17" edge="1" parent="1" source="5-1zp4KCR5sD29i6IIJs-4" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="5-1zp4KCR5sD29i6IIJs-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-18" edge="1" parent="1" source="5-1zp4KCR5sD29i6IIJs-5" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="5-1zp4KCR5sD29i6IIJs-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5-1zp4KCR5sD29i6IIJs-19" edge="1" parent="1" source="5-1zp4KCR5sD29i6IIJs-8" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="5-1zp4KCR5sD29i6IIJs-12" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

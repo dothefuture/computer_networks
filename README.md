@@ -9,8 +9,8 @@
 | 1 | Проектирование сети | Нет | [Задание](lesson_01/hw/hw_01.md) | Нужна своя схема |
 | 2 | Ethernet и Wireshark | [Конспект](lesson_02/class/Ethernet_switching.md) | [Перехват трафика](lesson_02/hw/Wireshark.md) | Готово |
 | 3 | MAC-адреса | Нет | [Схемы и ошибки](lesson_03/hw/MAC_address_scheme.md) | Готово |
-| 4 | Cisco Packet Tracer | Нет | [Задание](lesson_04/hw/Cisco_Packet_Tracer.md) | Нужен свой скриншот |
-| 5 | IPv4 и подсети | [Конспект](lesson_05/class/ipv4.md) | [Решение](lesson_05/hw/hw_05.md) | Нужен свой скриншот Cisco |
+| 4 | Cisco Packet Tracer | Нет | [Задание](lesson_04/hw/Cisco_Packet_Tracer.md) | Готово |
+| 5 | IPv4 и подсети | [Конспект](lesson_05/class/ipv4.md) | [Решение](lesson_05/hw/hw_05.md) | Готово |
 | 6 | Сеть из 8 компьютеров | [Конспект](lesson_06/class/class.md) | [Схема, ping и симуляция](lesson_06/hw/Cisco-Network-create.md) | Готово |
 | 7 | Деление сети на подсети | Нет | [Решение в Word](<lesson_07/hw/Решение_задач_IP.docx>) | Готово |
 | 8 | Основы маршрутизации | [Конспект](<lesson_08/class/Маршрутизация в сети Интернет.md>) | [Схемы Packet Tracer](lesson_08/hw/hw_08.md) | Лучше заменить скриншоты своими |
